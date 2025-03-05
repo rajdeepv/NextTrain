@@ -1,0 +1,15 @@
+{
+  "originHash" : "8a075851fa4dc3c81591953bae3be65f2fe93ec3e319176e30ead7bef62a59eb",
+  "pins" : [
+    {
+      "identity" : "ldbws",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rajdeepv/LDBWS.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9b69ada4658507ef9fa4b479dd2cef3d29b4ce40"
+      }
+    }
+  ],
+  "version" : 3
+}

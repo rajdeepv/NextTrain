@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9001A5512D7E457A000C15B1 /* LDBWS in Frameworks */ = {isa = PBXBuildFile; productRef = 9001A5502D7E457A000C15B1 /* LDBWS */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		908390DF2D77B37000BA19F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,25 +28,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		908390CE2D77B36E00BA19F6 /* Next train.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Next train.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		908390DE2D77B37000BA19F6 /* Next trainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Next trainTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		908390E82D77B37000BA19F6 /* Next trainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Next trainUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		908390CE2D77B36E00BA19F6 /* NextTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		908390DE2D77B37000BA19F6 /* NextTrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextTrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		908390E82D77B37000BA19F6 /* NextTrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextTrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		908390D02D77B36E00BA19F6 /* Next train */ = {
+		908390D02D77B36E00BA19F6 /* NextTrain */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Next train";
+			path = NextTrain;
 			sourceTree = "<group>";
 		};
-		908390E12D77B37000BA19F6 /* Next trainTests */ = {
+		908390E12D77B37000BA19F6 /* NextTrainTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Next trainTests";
+			path = NextTrainTests;
 			sourceTree = "<group>";
 		};
-		908390EB2D77B37000BA19F6 /* Next trainUITests */ = {
+		908390EB2D77B37000BA19F6 /* NextTrainUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Next trainUITests";
+			path = NextTrainUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9001A5512D7E457A000C15B1 /* LDBWS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +80,9 @@
 		908390C52D77B36E00BA19F6 = {
 			isa = PBXGroup;
 			children = (
-				908390D02D77B36E00BA19F6 /* Next train */,
-				908390E12D77B37000BA19F6 /* Next trainTests */,
-				908390EB2D77B37000BA19F6 /* Next trainUITests */,
+				908390D02D77B36E00BA19F6 /* NextTrain */,
+				908390E12D77B37000BA19F6 /* NextTrainTests */,
+				908390EB2D77B37000BA19F6 /* NextTrainUITests */,
 				908390CF2D77B36E00BA19F6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +90,9 @@
 		908390CF2D77B36E00BA19F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				908390CE2D77B36E00BA19F6 /* Next train.app */,
-				908390DE2D77B37000BA19F6 /* Next trainTests.xctest */,
-				908390E82D77B37000BA19F6 /* Next trainUITests.xctest */,
+				908390CE2D77B36E00BA19F6 /* NextTrain.app */,
+				908390DE2D77B37000BA19F6 /* NextTrainTests.xctest */,
+				908390E82D77B37000BA19F6 /* NextTrainUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		908390CD2D77B36E00BA19F6 /* Next train */ = {
+		908390CD2D77B36E00BA19F6 /* NextTrain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 908390F22D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "Next train" */;
+			buildConfigurationList = 908390F22D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "NextTrain" */;
 			buildPhases = (
 				908390CA2D77B36E00BA19F6 /* Sources */,
 				908390CB2D77B36E00BA19F6 /* Frameworks */,
@@ -108,18 +113,19 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				908390D02D77B36E00BA19F6 /* Next train */,
+				908390D02D77B36E00BA19F6 /* NextTrain */,
 			);
-			name = "Next train";
+			name = NextTrain;
 			packageProductDependencies = (
+				9001A5502D7E457A000C15B1 /* LDBWS */,
 			);
 			productName = "Next train";
-			productReference = 908390CE2D77B36E00BA19F6 /* Next train.app */;
+			productReference = 908390CE2D77B36E00BA19F6 /* NextTrain.app */;
 			productType = "com.apple.product-type.application";
 		};
-		908390DD2D77B37000BA19F6 /* Next trainTests */ = {
+		908390DD2D77B37000BA19F6 /* NextTrainTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 908390F52D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "Next trainTests" */;
+			buildConfigurationList = 908390F52D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "NextTrainTests" */;
 			buildPhases = (
 				908390DA2D77B37000BA19F6 /* Sources */,
 				908390DB2D77B37000BA19F6 /* Frameworks */,
@@ -131,18 +137,18 @@
 				908390E02D77B37000BA19F6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				908390E12D77B37000BA19F6 /* Next trainTests */,
+				908390E12D77B37000BA19F6 /* NextTrainTests */,
 			);
-			name = "Next trainTests";
+			name = NextTrainTests;
 			packageProductDependencies = (
 			);
 			productName = "Next trainTests";
-			productReference = 908390DE2D77B37000BA19F6 /* Next trainTests.xctest */;
+			productReference = 908390DE2D77B37000BA19F6 /* NextTrainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		908390E72D77B37000BA19F6 /* Next trainUITests */ = {
+		908390E72D77B37000BA19F6 /* NextTrainUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 908390F82D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "Next trainUITests" */;
+			buildConfigurationList = 908390F82D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "NextTrainUITests" */;
 			buildPhases = (
 				908390E42D77B37000BA19F6 /* Sources */,
 				908390E52D77B37000BA19F6 /* Frameworks */,
@@ -154,13 +160,13 @@
 				908390EA2D77B37000BA19F6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				908390EB2D77B37000BA19F6 /* Next trainUITests */,
+				908390EB2D77B37000BA19F6 /* NextTrainUITests */,
 			);
-			name = "Next trainUITests";
+			name = NextTrainUITests;
 			packageProductDependencies = (
 			);
 			productName = "Next trainUITests";
-			productReference = 908390E82D77B37000BA19F6 /* Next trainUITests.xctest */;
+			productReference = 908390E82D77B37000BA19F6 /* NextTrainUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +192,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 908390C92D77B36E00BA19F6 /* Build configuration list for PBXProject "Next train" */;
+			buildConfigurationList = 908390C92D77B36E00BA19F6 /* Build configuration list for PBXProject "NextTrain" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,14 +201,17 @@
 			);
 			mainGroup = 908390C52D77B36E00BA19F6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9001A54F2D7E457A000C15B1 /* XCRemoteSwiftPackageReference "LDBWS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 908390CF2D77B36E00BA19F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				908390CD2D77B36E00BA19F6 /* Next train */,
-				908390DD2D77B37000BA19F6 /* Next trainTests */,
-				908390E72D77B37000BA19F6 /* Next trainUITests */,
+				908390CD2D77B36E00BA19F6 /* NextTrain */,
+				908390DD2D77B37000BA19F6 /* NextTrainTests */,
+				908390E72D77B37000BA19F6 /* NextTrainUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +267,12 @@
 /* Begin PBXTargetDependency section */
 		908390E02D77B37000BA19F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 908390CD2D77B36E00BA19F6 /* Next train */;
+			target = 908390CD2D77B36E00BA19F6 /* NextTrain */;
 			targetProxy = 908390DF2D77B37000BA19F6 /* PBXContainerItemProxy */;
 		};
 		908390EA2D77B37000BA19F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 908390CD2D77B36E00BA19F6 /* Next train */;
+			target = 908390CD2D77B36E00BA19F6 /* NextTrain */;
 			targetProxy = 908390E92D77B37000BA19F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,7 +404,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Next train/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NextTrain/Preview Content\"";
+				DEVELOPMENT_TEAM = AAH3WWXHRY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -423,7 +433,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Next train/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NextTrain/Preview Content\"";
+				DEVELOPMENT_TEAM = AAH3WWXHRY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -458,7 +469,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Next train.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Next train";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextTrain.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NextTrain";
 			};
 			name = Debug;
 		};
@@ -476,7 +487,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Next train.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Next train";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NextTrain.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NextTrain";
 			};
 			name = Release;
 		};
@@ -515,7 +526,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		908390C92D77B36E00BA19F6 /* Build configuration list for PBXProject "Next train" */ = {
+		908390C92D77B36E00BA19F6 /* Build configuration list for PBXProject "NextTrain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				908390F02D77B37000BA19F6 /* Debug */,
@@ -524,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		908390F22D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "Next train" */ = {
+		908390F22D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "NextTrain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				908390F32D77B37000BA19F6 /* Debug */,
@@ -533,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		908390F52D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "Next trainTests" */ = {
+		908390F52D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "NextTrainTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				908390F62D77B37000BA19F6 /* Debug */,
@@ -542,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		908390F82D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "Next trainUITests" */ = {
+		908390F82D77B37000BA19F6 /* Build configuration list for PBXNativeTarget "NextTrainUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				908390F92D77B37000BA19F6 /* Debug */,
@@ -552,6 +563,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9001A54F2D7E457A000C15B1 /* XCRemoteSwiftPackageReference "LDBWS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rajdeepv/LDBWS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9001A5502D7E457A000C15B1 /* LDBWS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9001A54F2D7E457A000C15B1 /* XCRemoteSwiftPackageReference "LDBWS" */;
+			productName = LDBWS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 908390C62D77B36E00BA19F6 /* Project object */;
 }
