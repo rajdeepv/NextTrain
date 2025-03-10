@@ -1,78 +1,86 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var onwardTrainServiceListVM = TrainServiceListViewModel()
-    @StateObject private var returnTrainServiceListVM = TrainServiceListViewModel()
+    @State private var sourceDestinationPairs: [SourceDestinationPair] = [
+        SourceDestinationPair(source: "BXH", destination: "LBG"),
+        SourceDestinationPair(source: "CST", destination: "BXH")
+    ]
 
-    let onwardFrom = "BXH"
-    let onwardTo = "LBG"
+    var body: some View {
+        NavigationView {
+            VStack {
+                // Dynamically create departure board views
+                ForEach(sourceDestinationPairs, id: \.self) { pair in
+                    DepartureBoardView(pair: pair)
+                        .padding(.top)
+                }
 
-    let returnFrom = "CST"
-    let returnTo = "BXH"
+                NavigationLink(destination: SettingsView(sourceDestinationPairs: $sourceDestinationPairs)) {
+                    Text("Go to Settings")
+                        .padding()
+                        .foregroundColor(.blue)
+                }
+            }
+            .navigationTitle("Next Trains")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+}
 
-    fileprivate func departureBoardView(viewModel: TrainServiceListViewModel, fromCRS: String, toCRS: String) -> some View {
-        return VStack(alignment: .leading, spacing: 10) {
-            Text("From: \(fromCRS) To: \(toCRS)")
+// Separate View for Each Departure Board
+struct DepartureBoardView: View {
+    let pair: SourceDestinationPair
+    @StateObject private var viewModel = TrainServiceListViewModel()
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Departures from \(pair.source) to \(pair.destination)")
                 .font(.title2)
                 .fontWeight(.semibold)
                 .padding(.horizontal)
                 .padding(.top, 10)
 
             List(viewModel.trainServices, id: \.self.scheduledTime) { trainService in
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(trainService.destination)
+                VStack(alignment: .leading, spacing: 10) {
+                    Text("Destination: \(trainService.destination)")
                         .font(.headline)
                         .foregroundColor(.blue)
-                    
+                        .padding(.horizontal)
+
                     HStack {
                         Label("STD:", systemImage: "clock")
                         Text(trainService.scheduledTime)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    
+                    .padding(.horizontal)
+
                     HStack {
                         Label("Actual:", systemImage: "arrow.right.circle")
                         Text(trainService.actualTime)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
+                    .padding(.horizontal)
 
                     HStack {
                         Label("Platform:", systemImage: "train.side.front.car")
                         Text(trainService.platform)
+                            .frame(maxWidth: .infinity, alignment: .leading)
                     }
+                    .padding(.horizontal)
                 }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding()
+                .padding(.vertical)
                 .background(RoundedRectangle(cornerRadius: 10).fill(Color(.systemGray6)))
-                .listRowSeparator(Visibility.hidden)
-                
-                
+                .frame(maxWidth: .infinity, alignment: .leading) // Fill horizontal space
+                .listRowSeparator(.hidden)
             }
-            .listStyle(.plain) // Plain style to remove row separators
+            .listStyle(.plain)
             .refreshable {
-                // Trigger refresh when user pulls to refresh
-                viewModel.getNextTrain(fromCRS: fromCRS, toCRS: toCRS)
-            }
-            .onAppear {
-                if viewModel.trainServices.isEmpty {
-                    viewModel.getNextTrain(fromCRS: fromCRS, toCRS: toCRS)
-                }
+                viewModel.getNextTrain(fromCRS: pair.source, toCRS: pair.destination)
             }
         }
-    }
-
-    var body: some View {
-        NavigationView {
-            VStack {
-                departureBoardView(viewModel: onwardTrainServiceListVM, fromCRS: onwardFrom, toCRS: onwardTo)
-                departureBoardView(viewModel: returnTrainServiceListVM, fromCRS: returnFrom, toCRS: returnTo)
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("Next Trains")
-            .font(.title3)
+        .onAppear {
+            viewModel.getNextTrain(fromCRS: pair.source, toCRS: pair.destination)
         }
     }
-}
-
-#Preview {
-    ContentView()
 }
 

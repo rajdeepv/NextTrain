@@ -22,15 +22,15 @@ class TrainServiceListViewModel: ObservableObject {
             switch result {
             case let .success(departureBoard):
                 DispatchQueue.main.async {
+                    self.trainServices.forEach { trainservice in
+                        print(trainservice.destination)
+                        print(trainservice.actualTime)
+                        print(trainservice.scheduledTime)
+                        print(trainservice.platform)
+                    }
                     self.trainServices = departureBoard.trainServices.map({ TrainServiceViewModel(trainService: $0) })
                 }
 
-                self.trainServices.forEach { trainservice in
-                    print(trainservice.destination)
-                    print(trainservice.actualTime)
-                    print(trainservice.scheduledTime)
-                    print(trainservice.platform)
-                }
             case let .failure(error):
                 print("Error: \(error)")
             }
