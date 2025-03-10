@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SourceDestinationPair: Hashable {
+struct SourceDestinationPair: Codable, Hashable {
     let source: String
     let destination: String
 }
@@ -30,6 +30,7 @@ struct SettingsView: View {
                 if !source.isEmpty && !destination.isEmpty {
                     let newPair = SourceDestinationPair(source: source, destination: destination)
                     sourceDestinationPairs.append(newPair)
+                    savePairs()
                     source = ""
                     destination = ""
                 }
@@ -44,10 +45,17 @@ struct SettingsView: View {
                 }
                 .onDelete { indexSet in
                     sourceDestinationPairs.remove(atOffsets: indexSet)
+                    savePairs()
                 }
             }
         }
         .navigationTitle("Settings")
+    }
+    
+    private func savePairs() {
+        if let encodedData = try? JSONEncoder().encode(sourceDestinationPairs) {
+            UserDefaults.standard.set(encodedData, forKey: "sourceDestinationPairs")
+        }
     }
 }
 
