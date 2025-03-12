@@ -13,6 +13,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		903950782D820CC50037429F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 908390C62D77B36E00BA19F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F7191452D808E6800CAC5B5;
+			remoteInfo = WatchAppNextTrain;
+		};
 		908390DF2D77B37000BA19F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 908390C62D77B36E00BA19F6 /* Project object */;
@@ -259,6 +266,7 @@
 			);
 			dependencies = (
 				908390EA2D77B37000BA19F6 /* PBXTargetDependency */,
+				903950792D820CC50037429F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				908390EB2D77B37000BA19F6 /* NextTrainUITests */,
@@ -491,6 +499,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		903950792D820CC50037429F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F7191452D808E6800CAC5B5 /* WatchAppNextTrain */;
+			targetProxy = 903950782D820CC50037429F /* PBXContainerItemProxy */;
+		};
 		908390E02D77B37000BA19F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 908390CD2D77B36E00BA19F6 /* NextTrain */;
@@ -744,7 +757,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Next train";
+				TEST_TARGET_NAME = NextTrain;
 			};
 			name = Debug;
 		};
@@ -760,7 +773,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Next train";
+				TEST_TARGET_NAME = NextTrain;
 			};
 			name = Release;
 		};

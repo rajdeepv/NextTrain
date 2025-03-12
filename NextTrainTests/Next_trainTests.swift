@@ -6,7 +6,7 @@
 //
 
 import Testing
-@testable import Next_train
+@testable import NextTrain
 
 struct Next_trainTests {
 
