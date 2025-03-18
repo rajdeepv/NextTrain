@@ -11,7 +11,6 @@ struct DepartureBoard: Codable{
     struct TrainService: Codable{
         struct Destination: Codable{
             let locationName: String
-            let crs: String
         }
         let destination: [Destination]
         let std: String

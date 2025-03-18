@@ -1,5 +1,5 @@
 {
-  "originHash" : "8a075851fa4dc3c81591953bae3be65f2fe93ec3e319176e30ead7bef62a59eb",
+  "originHash" : "b536e496e6eaab1969949d252880fcef8eda3e99a6c4f01ab4e8971c815bb696",
   "pins" : [
     {
       "identity" : "ldbws",
@@ -8,6 +8,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "9b69ada4658507ef9fa4b479dd2cef3d29b4ce40"
+      }
+    },
+    {
+      "identity" : "sbtuitesttunnel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Subito-it/SBTUITestTunnel",
+      "state" : {
+        "branch" : "master",
+        "revision" : "bca57e5a8f0fd3c391fc2988f8957aed277ef8a9"
       }
     }
   ],

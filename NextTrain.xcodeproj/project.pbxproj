@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9001A5512D7E457A000C15B1 /* LDBWS in Frameworks */ = {isa = PBXBuildFile; productRef = 9001A5502D7E457A000C15B1 /* LDBWS */; };
+		90163CB52D89A7750096AC71 /* SBTUITestTunnelClient in Frameworks */ = {isa = PBXBuildFile; productRef = 90163CB42D89A7750096AC71 /* SBTUITestTunnelClient */; };
+		90163CB72D89A7750096AC71 /* SBTUITestTunnelServer in Frameworks */ = {isa = PBXBuildFile; productRef = 90163CB62D89A7750096AC71 /* SBTUITestTunnelServer */; };
 		9F7191692D808E6B00CAC5B5 /* WatchAppNextTrain.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9F7191462D808E6800CAC5B5 /* WatchAppNextTrain.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		9F7191792D808F1200CAC5B5 /* LDBWS in Frameworks */ = {isa = PBXBuildFile; productRef = 9F7191782D808F1200CAC5B5 /* LDBWS */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		90163CB82D8A0A690096AC71 /* SchemeNextTrain.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SchemeNextTrain.xctestplan; sourceTree = "<group>"; };
 		908390CE2D77B36E00BA19F6 /* NextTrain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextTrain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		908390DE2D77B37000BA19F6 /* NextTrainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextTrainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		908390E82D77B37000BA19F6 /* NextTrainUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextTrainUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9001A5512D7E457A000C15B1 /* LDBWS in Frameworks */,
+				90163CB72D89A7750096AC71 /* SBTUITestTunnelServer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90163CB52D89A7750096AC71 /* SBTUITestTunnelClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +185,7 @@
 		908390C52D77B36E00BA19F6 = {
 			isa = PBXGroup;
 			children = (
+				90163CB82D8A0A690096AC71 /* SchemeNextTrain.xctestplan */,
 				908390D02D77B36E00BA19F6 /* NextTrain */,
 				908390E12D77B37000BA19F6 /* NextTrainTests */,
 				908390EB2D77B37000BA19F6 /* NextTrainUITests */,
@@ -226,6 +232,7 @@
 			name = NextTrain;
 			packageProductDependencies = (
 				9001A5502D7E457A000C15B1 /* LDBWS */,
+				90163CB62D89A7750096AC71 /* SBTUITestTunnelServer */,
 			);
 			productName = "Next train";
 			productReference = 908390CE2D77B36E00BA19F6 /* NextTrain.app */;
@@ -273,6 +280,7 @@
 			);
 			name = NextTrainUITests;
 			packageProductDependencies = (
+				90163CB42D89A7750096AC71 /* SBTUITestTunnelClient */,
 			);
 			productName = "Next trainUITests";
 			productReference = 908390E82D77B37000BA19F6 /* NextTrainUITests.xctest */;
@@ -392,6 +400,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				9001A54F2D7E457A000C15B1 /* XCRemoteSwiftPackageReference "LDBWS" */,
+				90163CB32D89A7750096AC71 /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 908390CF2D77B36E00BA19F6 /* Products */;
@@ -992,6 +1001,14 @@
 				kind = branch;
 			};
 		};
+		90163CB32D89A7750096AC71 /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Subito-it/SBTUITestTunnel";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -999,6 +1016,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9001A54F2D7E457A000C15B1 /* XCRemoteSwiftPackageReference "LDBWS" */;
 			productName = LDBWS;
+		};
+		90163CB42D89A7750096AC71 /* SBTUITestTunnelClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90163CB32D89A7750096AC71 /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */;
+			productName = SBTUITestTunnelClient;
+		};
+		90163CB62D89A7750096AC71 /* SBTUITestTunnelServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90163CB32D89A7750096AC71 /* XCRemoteSwiftPackageReference "SBTUITestTunnel" */;
+			productName = SBTUITestTunnelServer;
 		};
 		9F7191782D808F1200CAC5B5 /* LDBWS */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -56,6 +56,8 @@ struct SettingsView: View {
         if let encodedData = try? JSONEncoder().encode(sourceDestinationPairs) {
             UserDefaults.standard.set(encodedData, forKey: "sourceDestinationPairs")
         }
+        
+        UserDefaults.standard.data(forKey: "sourceDestinationPairs")
     }
 }
 

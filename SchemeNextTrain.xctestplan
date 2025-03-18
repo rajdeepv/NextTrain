@@ -1,0 +1,42 @@
+{
+  "configurations" : [
+    {
+      "id" : "78A9AEBF-29BF-4790-8101-726DE0605AA2",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "environmentVariableEntries" : [
+      {
+        "key" : "OS_ACTIVITY_MODE",
+        "value" : "disable"
+      }
+    ],
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:NextTrain.xcodeproj",
+      "identifier" : "908390CD2D77B36E00BA19F6",
+      "name" : "NextTrain"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:NextTrain.xcodeproj",
+        "identifier" : "908390DD2D77B37000BA19F6",
+        "name" : "NextTrainTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:NextTrain.xcodeproj",
+        "identifier" : "908390E72D77B37000BA19F6",
+        "name" : "NextTrainUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
